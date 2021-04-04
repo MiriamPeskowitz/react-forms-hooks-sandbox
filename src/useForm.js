@@ -11,8 +11,6 @@ const useForm = (callback) => {
 			callback()
 	}
 
-
-
 	const handleChange = (event) => {
 		event.persist()
 		//called when using React synthetic events inside async callback function 
@@ -23,6 +21,7 @@ const useForm = (callback) => {
 				[event.target.name]: event.target.value
 
 			}))
+		console.log(values)
 		}
 
 		return {

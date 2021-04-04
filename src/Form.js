@@ -7,6 +7,7 @@ const Form = () => {
 
 	function login() {
 		console.log(values)
+		alert("you're in")
 	}
 
 	return (
