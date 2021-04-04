@@ -3,7 +3,7 @@ import React from 'react'
 import useForm from "./useForm"
 
 const Form = () => {
-	const {values, handleChange, handleSubmit } = useForm()
+	const {values, handleChange, handleSubmit } = useForm(login)
 
 	function login() {
 		console.log(values)

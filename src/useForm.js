@@ -7,7 +7,7 @@ const useForm = (callback) => {
 	const [values, setValues] = useState({})
 	
 	const handleSubmit = (event) => {
-		if (event) event.preventDefault
+		if (event) event.preventDefault()
 			callback()
 	}
 
@@ -20,11 +20,11 @@ const useForm = (callback) => {
 		//notused after v17, because no pooling 
 		setValues(values => (
 			{ ...values, 
-				[event.target.name: event.target.value]
+				[event.target.name]: event.target.value
 
 			}))
 		}
-		
+
 		return {
 			handleChange, 
 			handleSubmit,
